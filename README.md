@@ -1,5 +1,30 @@
 # New Hunter PoC 
 
+## Project Overview
+
+Deliverables: 
+- A (pseudo?)database of node information
+- Ability to assign logical config to nodes
+    - Add IP addresses & network configuration to an interface (IP, netmask, gateway, firewall zone) 
+    - Set groups for genders/pdsh
+    - Configure disks (format, mountpoint, mount options)
+    - Group processing tools
+        - Nodes automatically grouped based on hardware
+        - Iterative features for assigning IPs (e.g. +1 to last octet for each node IP address)
+- Generate node configuration files
+    - Create a file of variables that can be used by profile scripts
+    - Copy scripts from a profile directory (e.g. compute) into a directory for the node specifically
+- Documentation for installation & usage
+
+The following features are in scope for this tool:
+- Web server for nodes to contact to register (which triggers collection of data)
+- Command-line tool to process node information (interactive & non-interactive)
+- Command-line tool to generate node configuration files
+- Collection of markdown files documenting tool usage
+
+The following are out of scope: 
+- Installing operating systems on clients (due to vast differences between cloud + metal installations)
+
 ## Usage 
 
 ### Register Node 
