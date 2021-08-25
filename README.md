@@ -38,3 +38,8 @@ Additionally, the software would provide group processing helpers such that mult
 Once logical configuration information has been assigned to the nodes then build scripts can be generated. 
 
 The concept behind generating the scripts is to simply combine multiple directories of scripts together with a config file containing node-specific variables. Between the bash scripts and the variables there will be a full set of customisations & configurations for the node to be setup.
+
+## Things To Consider
+
+- Some way to deregister a node, this will handle cloud nodes coming & going (toggling an active/inactive state?)
+
